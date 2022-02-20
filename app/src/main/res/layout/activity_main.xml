@@ -8,6 +8,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/younglogo_01"
+        android:scaleType="centerCrop"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,16 +47,20 @@
         android:imeOptions="actionSend"
         android:hint="자유입력 (한글도 가능)"/>
 
-    <Button
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#0000FF"
-        android:textAllCaps="false"
-        android:text="Sign Up"/>
+        android:text="성별"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="푸시알림 on/off"/>
 
     <RadioGroup
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -67,6 +76,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="공개 안 함"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0000FF"
+            android:textAllCaps="false"
+            android:text="Sign Up"/>
 
     </RadioGroup>
 
